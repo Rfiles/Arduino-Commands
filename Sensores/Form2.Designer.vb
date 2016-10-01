@@ -79,6 +79,7 @@ Partial Class Form2
         Me.SerialPort1 = New System.IO.Ports.SerialPort(Me.components)
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.connecting_Timer = New System.Windows.Forms.Timer(Me.components)
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -90,9 +91,9 @@ Partial Class Form2
         '
         'TabControl1
         '
-        Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Controls.Add(Me.TabPage3)
+        Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Location = New System.Drawing.Point(12, 18)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -187,6 +188,7 @@ Partial Class Form2
         '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.Button1)
         Me.TabPage2.Controls.Add(Me.TextBox2)
         Me.TabPage2.Controls.Add(Me.TextBox1)
         Me.TabPage2.Controls.Add(Me.Label16)
@@ -454,6 +456,7 @@ Partial Class Form2
         'ProgressBar2
         '
         Me.ProgressBar2.Location = New System.Drawing.Point(79, 60)
+        Me.ProgressBar2.Maximum = 65536
         Me.ProgressBar2.Name = "ProgressBar2"
         Me.ProgressBar2.Size = New System.Drawing.Size(210, 23)
         Me.ProgressBar2.TabIndex = 1
@@ -470,8 +473,10 @@ Partial Class Form2
         'ProgressBar1
         '
         Me.ProgressBar1.Location = New System.Drawing.Point(79, 30)
+        Me.ProgressBar1.Maximum = 65536
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(210, 23)
+        Me.ProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar1.TabIndex = 0
         '
         'Label3
@@ -486,6 +491,7 @@ Partial Class Form2
         'ProgressBar3
         '
         Me.ProgressBar3.Location = New System.Drawing.Point(79, 89)
+        Me.ProgressBar3.Maximum = 65536
         Me.ProgressBar3.Name = "ProgressBar3"
         Me.ProgressBar3.Size = New System.Drawing.Size(210, 23)
         Me.ProgressBar3.TabIndex = 2
@@ -502,6 +508,7 @@ Partial Class Form2
         'ProgressBar4
         '
         Me.ProgressBar4.Location = New System.Drawing.Point(79, 119)
+        Me.ProgressBar4.Maximum = 65536
         Me.ProgressBar4.Name = "ProgressBar4"
         Me.ProgressBar4.Size = New System.Drawing.Size(210, 23)
         Me.ProgressBar4.TabIndex = 3
@@ -604,10 +611,20 @@ Partial Class Form2
         '
         'Timer1
         '
+        Me.Timer1.Interval = 500
         '
         'connecting_Timer
         '
         Me.connecting_Timer.Interval = 250
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(81, 33)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(97, 31)
+        Me.Button1.TabIndex = 22
+        Me.Button1.Text = "Refresh"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form2
         '
@@ -696,4 +713,5 @@ Partial Class Form2
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents receivedData_head_LBL As Label
     Friend WithEvents clear_BTN As Button
+    Friend WithEvents Button1 As Button
 End Class

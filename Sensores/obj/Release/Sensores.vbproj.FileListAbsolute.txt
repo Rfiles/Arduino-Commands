@@ -1,0 +1,12 @@
+C:\Users\Reis\Documents\Visual Studio 2015\Projects\Sensores\Sensores\bin\Release\Sensores.exe.config
+C:\Users\Reis\Documents\Visual Studio 2015\Projects\Sensores\Sensores\bin\Release\Sensores.exe
+C:\Users\Reis\Documents\Visual Studio 2015\Projects\Sensores\Sensores\bin\Release\Sensores.pdb
+C:\Users\Reis\Documents\Visual Studio 2015\Projects\Sensores\Sensores\bin\Release\Sensores.xml
+C:\Users\Reis\Documents\Visual Studio 2015\Projects\Sensores\Sensores\obj\Release\WindowsApplication1.Form2.resources
+C:\Users\Reis\Documents\Visual Studio 2015\Projects\Sensores\Sensores\obj\Release\WindowsApplication1.Map.resources
+C:\Users\Reis\Documents\Visual Studio 2015\Projects\Sensores\Sensores\obj\Release\WindowsApplication1.Resources.resources
+C:\Users\Reis\Documents\Visual Studio 2015\Projects\Sensores\Sensores\obj\Release\Sensores.vbproj.GenerateResource.Cache
+C:\Users\Reis\Documents\Visual Studio 2015\Projects\Sensores\Sensores\obj\Release\Sensores.exe
+C:\Users\Reis\Documents\Visual Studio 2015\Projects\Sensores\Sensores\obj\Release\Sensores.xml
+C:\Users\Reis\Documents\Visual Studio 2015\Projects\Sensores\Sensores\obj\Release\Sensores.pdb
+C:\Users\Reis\Documents\Visual Studio 2015\Projects\Sensores\Sensores\obj\Release\Sensores.vbprojResolveAssemblyReference.cache

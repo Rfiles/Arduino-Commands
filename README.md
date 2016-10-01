@@ -1,6 +1,6 @@
 # Arduino-Commands
 
-First Upload
+First Upload - This project is still alpha version
 
 
 This project was created based on projects of several other people with the intent of study some modules i got from ebay.

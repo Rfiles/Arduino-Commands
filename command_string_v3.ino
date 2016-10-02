@@ -24,8 +24,7 @@
   #include "Adafruit_TCS34725.h"
 #endif
 #ifdef ENABLE_BME280
-  #include <Adafruit_Sensor.h>
-  #include <Adafruit_BME280.h>
+  #include <BME280.h>
 #endif
 #ifdef ENABLE_RTC
   #include "RTClib.h"
@@ -174,11 +173,12 @@ tcs34725 rgb_sensor;
 #endif
 
 #ifdef ENABLE_BME280
-  #define SEALEVELPRESSURE_HPA (1013.25)
-  Adafruit_BME280 bme; // I2C
+  BME280 bme;                   // Default : forced mode, standby time = 1000 ms
+                                // Oversampling = pressure ×1, temperature ×1, humidity ×1, filter off,
+  bool metric = true;
 #endif
 #ifdef ENABLE_RTC
-  char daysOfTheWeek[7][12] = {"Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"};  // this is in pt-PT
+  char daysOfTheWeek[7][12] = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
   RTC_DS3231 rtc;
 #endif
 #ifdef ENABLE_MPU6050
@@ -460,16 +460,22 @@ void ColorSensorRead() {
 
 #ifdef ENABLE_BME280
 void BME_Data() {
-  Serial.print(F("<BME_T="));
-  Serial.print(bme.readTemperature());
-  Serial.print(F("><BME_P="));
-  Serial.print(bme.readPressure() / 100.0F);
-  Serial.print(F("><BME_A="));
-  Serial.print(bme.readAltitude(SEALEVELPRESSURE_HPA));
-  Serial.print(F("><BME_H="));
-  Serial.print(bme.readHumidity());
-  Serial.println(F(">"));
-
+  float temp(NAN), hum(NAN), pres(NAN);
+  uint8_t pressureUnit(1);   // unit: B000 = Pa, B001 = hPa, B010 = Hg, B011 = atm, B100 = bar, B101 = torr, B110 = N/m^2, B111 = psi
+  bme.ReadData(pres, temp, hum, metric, pressureUnit);                // Parameters: (float& pressure, float& temp, float& humidity, bool hPa = true, bool celsius = false)
+  float altitude = bme.CalculateAltitude(metric);
+  float dewPoint = bme.CalculateDewPoint(metric);
+  Serial.print("<BME_TEMP=");
+  Serial.print(temp);
+  Serial.print("><BME_HUM=");
+  Serial.print(hum);
+  Serial.print("><BME_PRESS=");
+  Serial.print(pres);
+  Serial.print("><BME_CALT=");
+  Serial.print(altitude);
+  Serial.print("><BME_DEWP=");
+  Serial.print(dewPoint);
+  Serial.println(">");
 }
 #endif
 

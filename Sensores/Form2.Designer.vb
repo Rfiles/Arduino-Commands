@@ -24,15 +24,8 @@ Partial Class Form2
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.send_BTN = New System.Windows.Forms.Button()
-        Me.send_TB = New System.Windows.Forms.TextBox()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.receivedData_head_LBL = New System.Windows.Forms.Label()
-        Me.clear_BTN = New System.Windows.Forms.Button()
-        Me.Timer_LBL = New System.Windows.Forms.Label()
-        Me.COMport_LBL = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
@@ -73,118 +66,112 @@ Partial Class Form2
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.send_BTN = New System.Windows.Forms.Button()
+        Me.send_TB = New System.Windows.Forms.TextBox()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.receivedData_head_LBL = New System.Windows.Forms.Label()
+        Me.clear_BTN = New System.Windows.Forms.Button()
+        Me.Timer_LBL = New System.Windows.Forms.Label()
+        Me.COMport_LBL = New System.Windows.Forms.Label()
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.TabPage6 = New System.Windows.Forms.TabPage()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.TabPage7 = New System.Windows.Forms.TabPage()
+        Me.TabPage8 = New System.Windows.Forms.TabPage()
         Me.refreshCOM_CB_BTN = New System.Windows.Forms.Button()
         Me.comPort_ComboBox = New System.Windows.Forms.ComboBox()
         Me.connect_BTN = New System.Windows.Forms.Button()
         Me.SerialPort1 = New System.IO.Ports.SerialPort(Me.components)
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.connecting_Timer = New System.Windows.Forms.Timer(Me.components)
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox16 = New System.Windows.Forms.TextBox()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.TextBox17 = New System.Windows.Forms.TextBox()
+        Me.TextBox18 = New System.Windows.Forms.TextBox()
+        Me.Label33 = New System.Windows.Forms.Label()
+        Me.TextBox19 = New System.Windows.Forms.TextBox()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.TextBox20 = New System.Windows.Forms.TextBox()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.TextBox21 = New System.Windows.Forms.TextBox()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.TextBox22 = New System.Windows.Forms.TextBox()
+        Me.Label37 = New System.Windows.Forms.Label()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Label38 = New System.Windows.Forms.Label()
+        Me.TextBox23 = New System.Windows.Forms.TextBox()
         Me.TabControl1.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
+        Me.TabPage4.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.TabPage5.SuspendLayout()
+        Me.TabPage6.SuspendLayout()
+        Me.GroupBox6.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
+        Me.TabPage7.SuspendLayout()
+        Me.TabPage8.SuspendLayout()
+        Me.GroupBox7.SuspendLayout()
+        Me.GroupBox8.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
         '
+        Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Controls.Add(Me.TabPage3)
-        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Controls.Add(Me.TabPage4)
+        Me.TabControl1.Controls.Add(Me.TabPage5)
+        Me.TabControl1.Controls.Add(Me.TabPage6)
+        Me.TabControl1.Controls.Add(Me.TabPage7)
+        Me.TabControl1.Controls.Add(Me.TabPage8)
         Me.TabControl1.Location = New System.Drawing.Point(12, 18)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(745, 597)
         Me.TabControl1.TabIndex = 0
-        '
-        'TabPage1
-        '
-        Me.TabPage1.Controls.Add(Me.send_BTN)
-        Me.TabPage1.Controls.Add(Me.send_TB)
-        Me.TabPage1.Controls.Add(Me.RichTextBox1)
-        Me.TabPage1.Controls.Add(Me.receivedData_head_LBL)
-        Me.TabPage1.Controls.Add(Me.clear_BTN)
-        Me.TabPage1.Controls.Add(Me.Timer_LBL)
-        Me.TabPage1.Controls.Add(Me.COMport_LBL)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(737, 571)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Connection"
-        Me.TabPage1.UseVisualStyleBackColor = True
-        '
-        'send_BTN
-        '
-        Me.send_BTN.Location = New System.Drawing.Point(576, 521)
-        Me.send_BTN.Name = "send_BTN"
-        Me.send_BTN.Size = New System.Drawing.Size(75, 23)
-        Me.send_BTN.TabIndex = 78
-        Me.send_BTN.Text = "Send"
-        Me.send_BTN.UseVisualStyleBackColor = True
-        '
-        'send_TB
-        '
-        Me.send_TB.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.send_TB.Location = New System.Drawing.Point(258, 521)
-        Me.send_TB.Name = "send_TB"
-        Me.send_TB.Size = New System.Drawing.Size(312, 22)
-        Me.send_TB.TabIndex = 77
-        Me.send_TB.Text = "<ALL?>"
-        '
-        'RichTextBox1
-        '
-        Me.RichTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBox1.Location = New System.Drawing.Point(41, 135)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(659, 355)
-        Me.RichTextBox1.TabIndex = 60
-        Me.RichTextBox1.Text = ""
-        '
-        'receivedData_head_LBL
-        '
-        Me.receivedData_head_LBL.AutoSize = True
-        Me.receivedData_head_LBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.receivedData_head_LBL.Location = New System.Drawing.Point(38, 114)
-        Me.receivedData_head_LBL.Name = "receivedData_head_LBL"
-        Me.receivedData_head_LBL.Size = New System.Drawing.Size(104, 18)
-        Me.receivedData_head_LBL.TabIndex = 59
-        Me.receivedData_head_LBL.Text = "Received Data"
-        '
-        'clear_BTN
-        '
-        Me.clear_BTN.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.clear_BTN.Location = New System.Drawing.Point(111, 524)
-        Me.clear_BTN.Name = "clear_BTN"
-        Me.clear_BTN.Size = New System.Drawing.Size(75, 30)
-        Me.clear_BTN.TabIndex = 56
-        Me.clear_BTN.Text = "Clear"
-        Me.clear_BTN.UseVisualStyleBackColor = True
-        '
-        'Timer_LBL
-        '
-        Me.Timer_LBL.AutoSize = True
-        Me.Timer_LBL.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Timer_LBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Timer_LBL.Location = New System.Drawing.Point(179, 22)
-        Me.Timer_LBL.Name = "Timer_LBL"
-        Me.Timer_LBL.Size = New System.Drawing.Size(86, 20)
-        Me.Timer_LBL.TabIndex = 29
-        Me.Timer_LBL.Text = "Timer: OFF"
-        '
-        'COMport_LBL
-        '
-        Me.COMport_LBL.AutoSize = True
-        Me.COMport_LBL.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.COMport_LBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.COMport_LBL.Location = New System.Drawing.Point(38, 22)
-        Me.COMport_LBL.Name = "COMport_LBL"
-        Me.COMport_LBL.Size = New System.Drawing.Size(78, 20)
-        Me.COMport_LBL.TabIndex = 28
-        Me.COMport_LBL.Text = "COM Port"
         '
         'TabPage2
         '
@@ -203,6 +190,16 @@ Partial Class Form2
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Color Sensor"
         Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(593, 6)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(138, 49)
+        Me.Button1.TabIndex = 22
+        Me.Button1.Text = "Get Data"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox2
         '
@@ -375,6 +372,7 @@ Partial Class Form2
         'ProgressBar5
         '
         Me.ProgressBar5.Location = New System.Drawing.Point(79, 60)
+        Me.ProgressBar5.Maximum = 65536
         Me.ProgressBar5.Name = "ProgressBar5"
         Me.ProgressBar5.Size = New System.Drawing.Size(210, 23)
         Me.ProgressBar5.TabIndex = 1
@@ -391,6 +389,7 @@ Partial Class Form2
         'ProgressBar6
         '
         Me.ProgressBar6.Location = New System.Drawing.Point(79, 30)
+        Me.ProgressBar6.Maximum = 65536
         Me.ProgressBar6.Name = "ProgressBar6"
         Me.ProgressBar6.Size = New System.Drawing.Size(210, 23)
         Me.ProgressBar6.TabIndex = 0
@@ -407,6 +406,7 @@ Partial Class Form2
         'ProgressBar7
         '
         Me.ProgressBar7.Location = New System.Drawing.Point(79, 89)
+        Me.ProgressBar7.Maximum = 65536
         Me.ProgressBar7.Name = "ProgressBar7"
         Me.ProgressBar7.Size = New System.Drawing.Size(210, 23)
         Me.ProgressBar7.TabIndex = 2
@@ -423,6 +423,7 @@ Partial Class Form2
         'ProgressBar8
         '
         Me.ProgressBar8.Location = New System.Drawing.Point(79, 119)
+        Me.ProgressBar8.Maximum = 65536
         Me.ProgressBar8.Name = "ProgressBar8"
         Me.ProgressBar8.Size = New System.Drawing.Size(210, 23)
         Me.ProgressBar8.TabIndex = 3
@@ -576,6 +577,459 @@ Partial Class Form2
         Me.Button5.Text = "LED ON"
         Me.Button5.UseVisualStyleBackColor = False
         '
+        'TabPage1
+        '
+        Me.TabPage1.Controls.Add(Me.Label31)
+        Me.TabPage1.Controls.Add(Me.TextBox16)
+        Me.TabPage1.Controls.Add(Me.Button2)
+        Me.TabPage1.Controls.Add(Me.send_BTN)
+        Me.TabPage1.Controls.Add(Me.send_TB)
+        Me.TabPage1.Controls.Add(Me.RichTextBox1)
+        Me.TabPage1.Controls.Add(Me.receivedData_head_LBL)
+        Me.TabPage1.Controls.Add(Me.clear_BTN)
+        Me.TabPage1.Controls.Add(Me.Timer_LBL)
+        Me.TabPage1.Controls.Add(Me.COMport_LBL)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(737, 571)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "Connection"
+        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.Red
+        Me.Button2.Location = New System.Drawing.Point(512, 22)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(188, 32)
+        Me.Button2.TabIndex = 79
+        Me.Button2.Text = "Arduino RESET"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'send_BTN
+        '
+        Me.send_BTN.Location = New System.Drawing.Point(576, 521)
+        Me.send_BTN.Name = "send_BTN"
+        Me.send_BTN.Size = New System.Drawing.Size(75, 23)
+        Me.send_BTN.TabIndex = 78
+        Me.send_BTN.Text = "Send"
+        Me.send_BTN.UseVisualStyleBackColor = True
+        '
+        'send_TB
+        '
+        Me.send_TB.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.send_TB.Location = New System.Drawing.Point(258, 521)
+        Me.send_TB.Name = "send_TB"
+        Me.send_TB.Size = New System.Drawing.Size(312, 22)
+        Me.send_TB.TabIndex = 77
+        Me.send_TB.Text = "<ALL?>"
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RichTextBox1.Location = New System.Drawing.Point(41, 135)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(659, 355)
+        Me.RichTextBox1.TabIndex = 60
+        Me.RichTextBox1.Text = ""
+        '
+        'receivedData_head_LBL
+        '
+        Me.receivedData_head_LBL.AutoSize = True
+        Me.receivedData_head_LBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.receivedData_head_LBL.Location = New System.Drawing.Point(38, 114)
+        Me.receivedData_head_LBL.Name = "receivedData_head_LBL"
+        Me.receivedData_head_LBL.Size = New System.Drawing.Size(104, 18)
+        Me.receivedData_head_LBL.TabIndex = 59
+        Me.receivedData_head_LBL.Text = "Received Data"
+        '
+        'clear_BTN
+        '
+        Me.clear_BTN.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.clear_BTN.Location = New System.Drawing.Point(111, 524)
+        Me.clear_BTN.Name = "clear_BTN"
+        Me.clear_BTN.Size = New System.Drawing.Size(75, 30)
+        Me.clear_BTN.TabIndex = 56
+        Me.clear_BTN.Text = "Clear"
+        Me.clear_BTN.UseVisualStyleBackColor = True
+        '
+        'Timer_LBL
+        '
+        Me.Timer_LBL.AutoSize = True
+        Me.Timer_LBL.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Timer_LBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Timer_LBL.Location = New System.Drawing.Point(179, 22)
+        Me.Timer_LBL.Name = "Timer_LBL"
+        Me.Timer_LBL.Size = New System.Drawing.Size(86, 20)
+        Me.Timer_LBL.TabIndex = 29
+        Me.Timer_LBL.Text = "Timer: OFF"
+        '
+        'COMport_LBL
+        '
+        Me.COMport_LBL.AutoSize = True
+        Me.COMport_LBL.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.COMport_LBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.COMport_LBL.Location = New System.Drawing.Point(38, 22)
+        Me.COMport_LBL.Name = "COMport_LBL"
+        Me.COMport_LBL.Size = New System.Drawing.Size(78, 20)
+        Me.COMport_LBL.TabIndex = 28
+        Me.COMport_LBL.Text = "COM Port"
+        '
+        'TabPage4
+        '
+        Me.TabPage4.Controls.Add(Me.Button3)
+        Me.TabPage4.Controls.Add(Me.GroupBox4)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Size = New System.Drawing.Size(737, 571)
+        Me.TabPage4.TabIndex = 3
+        Me.TabPage4.Text = "RTC"
+        Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(609, 3)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(125, 45)
+        Me.Button3.TabIndex = 1
+        Me.Button3.Text = "Get Data"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.TextBox9)
+        Me.GroupBox4.Controls.Add(Me.Label24)
+        Me.GroupBox4.Controls.Add(Me.TextBox6)
+        Me.GroupBox4.Controls.Add(Me.Label21)
+        Me.GroupBox4.Controls.Add(Me.TextBox7)
+        Me.GroupBox4.Controls.Add(Me.Label22)
+        Me.GroupBox4.Controls.Add(Me.TextBox8)
+        Me.GroupBox4.Controls.Add(Me.Label23)
+        Me.GroupBox4.Controls.Add(Me.TextBox5)
+        Me.GroupBox4.Controls.Add(Me.Label20)
+        Me.GroupBox4.Controls.Add(Me.TextBox4)
+        Me.GroupBox4.Controls.Add(Me.Label19)
+        Me.GroupBox4.Controls.Add(Me.TextBox3)
+        Me.GroupBox4.Controls.Add(Me.Label18)
+        Me.GroupBox4.Location = New System.Drawing.Point(50, 57)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(317, 295)
+        Me.GroupBox4.TabIndex = 0
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "CLOCK DATA"
+        '
+        'TextBox9
+        '
+        Me.TextBox9.Location = New System.Drawing.Point(27, 230)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(54, 20)
+        Me.TextBox9.TabIndex = 13
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Location = New System.Drawing.Point(25, 208)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(53, 13)
+        Me.Label24.TabIndex = 12
+        Me.Label24.Text = "Weekday"
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(167, 143)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(53, 20)
+        Me.TextBox6.TabIndex = 11
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(182, 127)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(26, 13)
+        Me.Label21.TabIndex = 10
+        Me.Label21.Text = "Day"
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(99, 143)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(53, 20)
+        Me.TextBox7.TabIndex = 9
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Location = New System.Drawing.Point(109, 127)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(37, 13)
+        Me.Label22.TabIndex = 8
+        Me.Label22.Text = "Month"
+        '
+        'TextBox8
+        '
+        Me.TextBox8.Location = New System.Drawing.Point(29, 143)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(53, 20)
+        Me.TextBox8.TabIndex = 7
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(39, 127)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(29, 13)
+        Me.Label23.TabIndex = 6
+        Me.Label23.Text = "Year"
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(167, 59)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(53, 20)
+        Me.TextBox5.TabIndex = 5
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(164, 43)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(44, 13)
+        Me.Label20.TabIndex = 4
+        Me.Label20.Text = "Second"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(99, 59)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(53, 20)
+        Me.TextBox4.TabIndex = 3
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(109, 43)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(39, 13)
+        Me.Label19.TabIndex = 2
+        Me.Label19.Text = "Minute"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(29, 59)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(53, 20)
+        Me.TextBox3.TabIndex = 1
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(39, 43)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(30, 13)
+        Me.Label18.TabIndex = 0
+        Me.Label18.Text = "Hour"
+        '
+        'TabPage5
+        '
+        Me.TabPage5.Controls.Add(Me.Button4)
+        Me.TabPage5.Controls.Add(Me.TextBox10)
+        Me.TabPage5.Controls.Add(Me.Label25)
+        Me.TabPage5.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage5.Name = "TabPage5"
+        Me.TabPage5.Size = New System.Drawing.Size(737, 571)
+        Me.TabPage5.TabIndex = 4
+        Me.TabPage5.Text = "UV"
+        Me.TabPage5.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Location = New System.Drawing.Point(607, 3)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(127, 49)
+        Me.Button4.TabIndex = 2
+        Me.Button4.Text = "Get Data"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox10.Location = New System.Drawing.Point(184, 192)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(127, 47)
+        Me.TextBox10.TabIndex = 1
+        Me.TextBox10.Text = "-"
+        Me.TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(159, 93)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(170, 42)
+        Me.Label25.TabIndex = 0
+        Me.Label25.Text = "UV Level"
+        '
+        'TabPage6
+        '
+        Me.TabPage6.Controls.Add(Me.Button8)
+        Me.TabPage6.Controls.Add(Me.GroupBox6)
+        Me.TabPage6.Controls.Add(Me.GroupBox5)
+        Me.TabPage6.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage6.Name = "TabPage6"
+        Me.TabPage6.Size = New System.Drawing.Size(737, 571)
+        Me.TabPage6.TabIndex = 5
+        Me.TabPage6.Text = "BME280"
+        Me.TabPage6.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.Location = New System.Drawing.Point(604, 3)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(133, 50)
+        Me.Button8.TabIndex = 2
+        Me.Button8.Text = "Get Data"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'GroupBox6
+        '
+        Me.GroupBox6.Controls.Add(Me.TextBox15)
+        Me.GroupBox6.Controls.Add(Me.Label30)
+        Me.GroupBox6.Controls.Add(Me.TextBox14)
+        Me.GroupBox6.Controls.Add(Me.Label29)
+        Me.GroupBox6.Location = New System.Drawing.Point(323, 57)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Size = New System.Drawing.Size(227, 223)
+        Me.GroupBox6.TabIndex = 1
+        Me.GroupBox6.TabStop = False
+        Me.GroupBox6.Text = "CALCULATED"
+        '
+        'TextBox15
+        '
+        Me.TextBox15.Location = New System.Drawing.Point(75, 87)
+        Me.TextBox15.Name = "TextBox15"
+        Me.TextBox15.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox15.TabIndex = 5
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Location = New System.Drawing.Point(13, 90)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(56, 13)
+        Me.Label30.TabIndex = 4
+        Me.Label30.Text = "Dew Point"
+        '
+        'TextBox14
+        '
+        Me.TextBox14.Location = New System.Drawing.Point(75, 35)
+        Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox14.TabIndex = 3
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Location = New System.Drawing.Point(27, 38)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(42, 13)
+        Me.Label29.TabIndex = 2
+        Me.Label29.Text = "Altitude"
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Controls.Add(Me.TextBox13)
+        Me.GroupBox5.Controls.Add(Me.Label28)
+        Me.GroupBox5.Controls.Add(Me.TextBox12)
+        Me.GroupBox5.Controls.Add(Me.Label27)
+        Me.GroupBox5.Controls.Add(Me.TextBox11)
+        Me.GroupBox5.Controls.Add(Me.Label26)
+        Me.GroupBox5.Location = New System.Drawing.Point(66, 56)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(227, 224)
+        Me.GroupBox5.TabIndex = 0
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "DATA"
+        '
+        'TextBox13
+        '
+        Me.TextBox13.Location = New System.Drawing.Point(72, 137)
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox13.TabIndex = 5
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Location = New System.Drawing.Point(21, 140)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(47, 13)
+        Me.Label28.TabIndex = 4
+        Me.Label28.Text = "Humidity"
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Location = New System.Drawing.Point(72, 85)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox12.TabIndex = 3
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Location = New System.Drawing.Point(2, 88)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(67, 13)
+        Me.Label27.TabIndex = 2
+        Me.Label27.Text = "Temperature"
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Location = New System.Drawing.Point(72, 33)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox11.TabIndex = 1
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Location = New System.Drawing.Point(21, 36)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(48, 13)
+        Me.Label26.TabIndex = 0
+        Me.Label26.Text = "Pressure"
+        '
+        'TabPage7
+        '
+        Me.TabPage7.Controls.Add(Me.Button9)
+        Me.TabPage7.Controls.Add(Me.GroupBox8)
+        Me.TabPage7.Controls.Add(Me.GroupBox7)
+        Me.TabPage7.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage7.Name = "TabPage7"
+        Me.TabPage7.Size = New System.Drawing.Size(737, 571)
+        Me.TabPage7.TabIndex = 6
+        Me.TabPage7.Text = "MPU6050"
+        Me.TabPage7.UseVisualStyleBackColor = True
+        '
+        'TabPage8
+        '
+        Me.TabPage8.Controls.Add(Me.TextBox23)
+        Me.TabPage8.Controls.Add(Me.Label38)
+        Me.TabPage8.Controls.Add(Me.Button10)
+        Me.TabPage8.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage8.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage8.Name = "TabPage8"
+        Me.TabPage8.Size = New System.Drawing.Size(737, 571)
+        Me.TabPage8.TabIndex = 7
+        Me.TabPage8.Text = "Lux"
+        Me.TabPage8.UseVisualStyleBackColor = True
+        '
         'refreshCOM_CB_BTN
         '
         Me.refreshCOM_CB_BTN.Location = New System.Drawing.Point(57, 621)
@@ -617,14 +1071,188 @@ Partial Class Form2
         '
         Me.connecting_Timer.Interval = 250
         '
-        'Button1
+        'TextBox16
         '
-        Me.Button1.Location = New System.Drawing.Point(81, 33)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(97, 31)
-        Me.Button1.TabIndex = 22
-        Me.Button1.Text = "Refresh"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.TextBox16.Location = New System.Drawing.Point(179, 75)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.Size = New System.Drawing.Size(121, 20)
+        Me.TextBox16.TabIndex = 80
+        Me.TextBox16.Text = "No Validation"
+        Me.TextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Location = New System.Drawing.Point(112, 78)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(61, 13)
+        Me.Label31.TabIndex = 81
+        Me.Label31.Text = "Connection"
+        '
+        'GroupBox7
+        '
+        Me.GroupBox7.Controls.Add(Me.TextBox19)
+        Me.GroupBox7.Controls.Add(Me.Label34)
+        Me.GroupBox7.Controls.Add(Me.TextBox18)
+        Me.GroupBox7.Controls.Add(Me.Label33)
+        Me.GroupBox7.Controls.Add(Me.TextBox17)
+        Me.GroupBox7.Controls.Add(Me.Label32)
+        Me.GroupBox7.Location = New System.Drawing.Point(52, 103)
+        Me.GroupBox7.Name = "GroupBox7"
+        Me.GroupBox7.Size = New System.Drawing.Size(240, 193)
+        Me.GroupBox7.TabIndex = 0
+        Me.GroupBox7.TabStop = False
+        Me.GroupBox7.Text = "Accelerometer"
+        '
+        'GroupBox8
+        '
+        Me.GroupBox8.Controls.Add(Me.TextBox20)
+        Me.GroupBox8.Controls.Add(Me.Label35)
+        Me.GroupBox8.Controls.Add(Me.TextBox21)
+        Me.GroupBox8.Controls.Add(Me.Label36)
+        Me.GroupBox8.Controls.Add(Me.TextBox22)
+        Me.GroupBox8.Controls.Add(Me.Label37)
+        Me.GroupBox8.Location = New System.Drawing.Point(353, 103)
+        Me.GroupBox8.Name = "GroupBox8"
+        Me.GroupBox8.Size = New System.Drawing.Size(241, 193)
+        Me.GroupBox8.TabIndex = 1
+        Me.GroupBox8.TabStop = False
+        Me.GroupBox8.Text = "Gyroscope"
+        '
+        'Button9
+        '
+        Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.Location = New System.Drawing.Point(605, 3)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(129, 49)
+        Me.Button9.TabIndex = 2
+        Me.Button9.Text = "Get Data"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Location = New System.Drawing.Point(54, 33)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(14, 13)
+        Me.Label32.TabIndex = 0
+        Me.Label32.Text = "X"
+        '
+        'TextBox17
+        '
+        Me.TextBox17.Location = New System.Drawing.Point(74, 30)
+        Me.TextBox17.Name = "TextBox17"
+        Me.TextBox17.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox17.TabIndex = 1
+        '
+        'TextBox18
+        '
+        Me.TextBox18.Location = New System.Drawing.Point(74, 82)
+        Me.TextBox18.Name = "TextBox18"
+        Me.TextBox18.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox18.TabIndex = 3
+        '
+        'Label33
+        '
+        Me.Label33.AutoSize = True
+        Me.Label33.Location = New System.Drawing.Point(54, 85)
+        Me.Label33.Name = "Label33"
+        Me.Label33.Size = New System.Drawing.Size(14, 13)
+        Me.Label33.TabIndex = 2
+        Me.Label33.Text = "Y"
+        '
+        'TextBox19
+        '
+        Me.TextBox19.Location = New System.Drawing.Point(74, 134)
+        Me.TextBox19.Name = "TextBox19"
+        Me.TextBox19.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox19.TabIndex = 5
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.Location = New System.Drawing.Point(54, 137)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(14, 13)
+        Me.Label34.TabIndex = 4
+        Me.Label34.Text = "Z"
+        '
+        'TextBox20
+        '
+        Me.TextBox20.Location = New System.Drawing.Point(80, 138)
+        Me.TextBox20.Name = "TextBox20"
+        Me.TextBox20.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox20.TabIndex = 11
+        '
+        'Label35
+        '
+        Me.Label35.AutoSize = True
+        Me.Label35.Location = New System.Drawing.Point(60, 141)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(14, 13)
+        Me.Label35.TabIndex = 10
+        Me.Label35.Text = "Z"
+        '
+        'TextBox21
+        '
+        Me.TextBox21.Location = New System.Drawing.Point(80, 86)
+        Me.TextBox21.Name = "TextBox21"
+        Me.TextBox21.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox21.TabIndex = 9
+        '
+        'Label36
+        '
+        Me.Label36.AutoSize = True
+        Me.Label36.Location = New System.Drawing.Point(60, 89)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(14, 13)
+        Me.Label36.TabIndex = 8
+        Me.Label36.Text = "Y"
+        '
+        'TextBox22
+        '
+        Me.TextBox22.Location = New System.Drawing.Point(80, 34)
+        Me.TextBox22.Name = "TextBox22"
+        Me.TextBox22.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox22.TabIndex = 7
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.Location = New System.Drawing.Point(60, 37)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(14, 13)
+        Me.Label37.TabIndex = 6
+        Me.Label37.Text = "X"
+        '
+        'Button10
+        '
+        Me.Button10.Location = New System.Drawing.Point(615, 3)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(119, 39)
+        Me.Button10.TabIndex = 0
+        Me.Button10.Text = "Get Data"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Label38
+        '
+        Me.Label38.AutoSize = True
+        Me.Label38.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label38.Location = New System.Drawing.Point(199, 88)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(308, 42)
+        Me.Label38.TabIndex = 1
+        Me.Label38.Text = "Light LUX Level:"
+        '
+        'TextBox23
+        '
+        Me.TextBox23.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox23.Location = New System.Drawing.Point(260, 150)
+        Me.TextBox23.Name = "TextBox23"
+        Me.TextBox23.Size = New System.Drawing.Size(190, 49)
+        Me.TextBox23.TabIndex = 2
+        Me.TextBox23.Text = "-"
+        Me.TextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Form2
         '
@@ -639,10 +1267,8 @@ Partial Class Form2
         Me.MaximizeBox = False
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form2"
+        Me.Text = "Sensores"
         Me.TabControl1.ResumeLayout(False)
-        Me.TabPage1.ResumeLayout(False)
-        Me.TabPage1.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
@@ -653,6 +1279,25 @@ Partial Class Form2
         Me.GroupBox1.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
+        Me.TabPage1.ResumeLayout(False)
+        Me.TabPage1.PerformLayout()
+        Me.TabPage4.ResumeLayout(False)
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
+        Me.TabPage5.ResumeLayout(False)
+        Me.TabPage5.PerformLayout()
+        Me.TabPage6.ResumeLayout(False)
+        Me.GroupBox6.ResumeLayout(False)
+        Me.GroupBox6.PerformLayout()
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox5.PerformLayout()
+        Me.TabPage7.ResumeLayout(False)
+        Me.TabPage8.ResumeLayout(False)
+        Me.TabPage8.PerformLayout()
+        Me.GroupBox7.ResumeLayout(False)
+        Me.GroupBox7.PerformLayout()
+        Me.GroupBox8.ResumeLayout(False)
+        Me.GroupBox8.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -714,4 +1359,62 @@ Partial Class Form2
     Friend WithEvents receivedData_head_LBL As Label
     Friend WithEvents clear_BTN As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents TabPage4 As TabPage
+    Friend WithEvents TabPage5 As TabPage
+    Friend WithEvents TabPage6 As TabPage
+    Friend WithEvents TabPage7 As TabPage
+    Friend WithEvents TabPage8 As TabPage
+    Friend WithEvents Button3 As Button
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Label20 As Label
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Label19 As Label
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Label18 As Label
+    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents Label21 As Label
+    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents Label22 As Label
+    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents Label23 As Label
+    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents Label24 As Label
+    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents Label25 As Label
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents GroupBox6 As GroupBox
+    Friend WithEvents TextBox15 As TextBox
+    Friend WithEvents Label30 As Label
+    Friend WithEvents TextBox14 As TextBox
+    Friend WithEvents Label29 As Label
+    Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents Label28 As Label
+    Friend WithEvents TextBox12 As TextBox
+    Friend WithEvents Label27 As Label
+    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents Label26 As Label
+    Friend WithEvents Label31 As Label
+    Friend WithEvents TextBox16 As TextBox
+    Friend WithEvents Button9 As Button
+    Friend WithEvents GroupBox8 As GroupBox
+    Friend WithEvents GroupBox7 As GroupBox
+    Friend WithEvents TextBox17 As TextBox
+    Friend WithEvents Label32 As Label
+    Friend WithEvents TextBox20 As TextBox
+    Friend WithEvents Label35 As Label
+    Friend WithEvents TextBox21 As TextBox
+    Friend WithEvents Label36 As Label
+    Friend WithEvents TextBox22 As TextBox
+    Friend WithEvents Label37 As Label
+    Friend WithEvents TextBox19 As TextBox
+    Friend WithEvents Label34 As Label
+    Friend WithEvents TextBox18 As TextBox
+    Friend WithEvents Label33 As Label
+    Friend WithEvents TextBox23 As TextBox
+    Friend WithEvents Label38 As Label
+    Friend WithEvents Button10 As Button
 End Class

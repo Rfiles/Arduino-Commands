@@ -9,6 +9,7 @@ Public Class Form2
     Dim receivedData As String = ""
     Dim connected As Boolean = False
     Dim count = 0
+    Dim parse_loop As Boolean = False
 
 
     Dim id_string As String
@@ -55,17 +56,17 @@ Public Class Form2
             SerialPort1.PortName = comPORT
             'Debug.Print("COM: " & comPORT)
             SerialPort1.BaudRate = 115200
-                SerialPort1.DataBits = 8
-                SerialPort1.Parity = Parity.None
-                SerialPort1.StopBits = StopBits.One
-                SerialPort1.Handshake = Handshake.None
-                SerialPort1.Encoding = System.Text.Encoding.Default
-                SerialPort1.ReadTimeout = 10000
+            SerialPort1.DataBits = 8
+            SerialPort1.Parity = Parity.None
+            SerialPort1.StopBits = StopBits.One
+            SerialPort1.Handshake = Handshake.None
+            SerialPort1.Encoding = System.Text.Encoding.Default
+            SerialPort1.ReadTimeout = 10000
 
-                SerialPort1.Open()
+            SerialPort1.Open()
 
-                'See if the Arduino is there
-                count = 0
+            'See if the Arduino is there
+            count = 0
                 'SerialPort1.WriteLine("<HELLO>")
                 connect_BTN.Text = "Connecting..."
                 connecting_Timer.Enabled = True
@@ -155,20 +156,19 @@ Public Class Form2
         Dim Loop1 As Integer
         Dim rx_len As Integer
         'Debug.Print("timer tick")
+        If parse_loop = False Then
+            receivedData = ReceiveSerialData()
+            rx_len = Len(receivedData)
+        End If
 
-        receivedData = ReceiveSerialData()
         'Debug.Print("1:" & receivedData)
         If receivedData <> "" Then
-            rx_len = Len(receivedData)
-            Debug.Print("2:" & receivedData & rx_len)
+            parse_loop = True
             RichTextBox1.ForeColor = Color.DarkGreen
             RichTextBox1.Text &= vbCrLf & "RX: " & receivedData
-            Debug.Print("3:" & receivedData & rx_len)
-            ' Debug.Print("SIZE:" & rx_len)
-            'rx_len = Len(receivedData)
-            Debug.Print("4:" & receivedData & rx_len)
+
             For Loop1 = 0 To rx_len - 1
-                Debug.Print(receivedData(Loop1) & Loop1)
+                Debug.Print(receivedData(Loop1) & " <- " & Loop1)
                 Select Case (receivedData(Loop1))
                     Case "<"
                         parse_stat = 1   'command start
@@ -202,6 +202,9 @@ Public Class Form2
                 If parse_stat = 2 And content = 0 Then ResetStrings()                         'bad command (sem read ou write)
                 If parse_stat = 2 And content > 0 And isData = 0 Then ExecuteCommand()        'command done
             Next
+            parse_loop = False
+            receivedData = ""
+            rx_len = 0
             'Debug.Print("Loop End")
         End If
     End Sub
@@ -250,7 +253,8 @@ Public Class Form2
             End If
             '##########################################################################
             If id_string = "BOOT" Then
-                MsgBox("Arduino Reeniciou")
+                Debug.Print("Arduino Reeniciou")
+                TextBox16.Text = "VALID!"
             End If
             '##########################################################################
             If id_string = "COLOR_R_RAW" Then
@@ -273,6 +277,95 @@ Public Class Form2
                 ProgressBar4.Value = Val(value_string)
                 Debug.Print("Raw Color C: " & Val(value_string))
             End If
+            If id_string = "COLOR_R_COMP" Then
+                'If ProgressBar1.Maximum < Val(value_string) Then ProgressBar1.Maximum = Val(value_string)
+                ProgressBar6.Value = Val(value_string)
+                Debug.Print("Comp Color R: " & Val(value_string))
+            End If
+            If id_string = "COLOR_G_COMP" Then
+                'If ProgressBar2.Maximum < Val(value_string) Then ProgressBar2.Maximum = Val(value_string)
+                ProgressBar5.Value = Val(value_string)
+                Debug.Print("Comp Color G: " & Val(value_string))
+            End If
+            If id_string = "COLOR_B_COMP" Then
+                'If ProgressBar3.Maximum < Val(value_string) Then ProgressBar3.Maximum = Val(value_string)
+                ProgressBar7.Value = Val(value_string)
+                Debug.Print("Comp Color B: " & Val(value_string))
+            End If
+            If id_string = "COLOR_C_COMP" Then
+                'If ProgressBar4.Maximum < Val(value_string) Then ProgressBar4.Maximum = Val(value_string)
+                ProgressBar8.Value = Val(value_string)
+                Debug.Print("Comp Color C: " & Val(value_string))
+            End If
+            '##########################################################################
+            If id_string = "RTC_H" Then
+                TextBox3.Text = Val(value_string)
+            End If
+            If id_string = "RTC_N" Then
+                TextBox4.Text = Val(value_string)
+            End If
+            If id_string = "RTC_S" Then
+                TextBox5.Text = Val(value_string)
+            End If
+            If id_string = "RTC_Y" Then
+                TextBox8.Text = Val(value_string)
+            End If
+            If id_string = "RTC_M" Then
+                TextBox7.Text = Val(value_string)
+            End If
+            If id_string = "RTC_D" Then
+                TextBox6.Text = Val(value_string)
+            End If
+            If id_string = "RTC_W" Then
+                TextBox9.Text = value_string
+            End If
+
+            '##########################################################################
+            If id_string = "UV_L" Then
+                TextBox10.Text = Val(value_string)
+            End If
+            '##########################################################################
+            If id_string = "BME_PRESS" Then
+                TextBox11.Text = Val(value_string)
+            End If
+            If id_string = "BME_TEMP" Then
+                TextBox12.Text = Val(value_string)
+            End If
+            If id_string = "BME_HUM" Then
+                TextBox13.Text = Val(value_string)
+            End If
+            If id_string = "BME_CALT" Then
+                TextBox14.Text = Val(value_string)
+            End If
+            If id_string = "BME_DEWP" Then
+                TextBox15.Text = Val(value_string)
+            End If
+
+            '##########################################################################
+            If id_string = "ACC_X" Then
+                TextBox17.Text = Val(value_string)
+            End If
+            If id_string = "ACC_Y" Then
+                TextBox18.Text = Val(value_string)
+            End If
+            If id_string = "ACC_Z" Then
+                TextBox19.Text = Val(value_string)
+            End If
+            If id_string = "GRA_X" Then
+                TextBox22.Text = Val(value_string)
+            End If
+            If id_string = "GRA_Y" Then
+                TextBox21.Text = Val(value_string)
+            End If
+            If id_string = "GRA_Z" Then
+                TextBox20.Text = Val(value_string)
+            End If
+
+            '##########################################################################
+            If id_string = "LIGHT_LUX" Then
+                TextBox23.Text = Val(value_string)
+            End If
+            '##########################################################################
 
 
 
@@ -288,10 +381,41 @@ Public Class Form2
     End Function
 
     Function Send_Data(Comando As String)
-        SerialPort1.WriteLine(Comando)
-        RichTextBox1.ForeColor = Color.Red
-        RichTextBox1.Text &= vbCrLf & "TX: " & Comando
+        If connected = True Then
+            SerialPort1.WriteLine(Comando)
+            RichTextBox1.ForeColor = Color.Red
+            RichTextBox1.Text &= vbCrLf & "TX: " & Comando
+        End If
+
     End Function
 
+    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox1.TextChanged
+        RichTextBox1.SelectionStart = RichTextBox1.Text.Length
+        RichTextBox1.ScrollToCaret()
+    End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        SerialPort1.DtrEnable = True
+        SerialPort1.DtrEnable = False
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Send_Data("<RTC?>")
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Send_Data("<UV?>")
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Send_Data("<BME?>")
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Send_Data("<MPU?>")
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Send_Data("<LIGHT?>")
+    End Sub
 End Class
